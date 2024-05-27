@@ -1,1 +1,72 @@
-123
+# 1. 數字與字串兩類變數的宣告
+number_var = 5
+string_var = "Hello, world!"
+
+# 2. 操作 List
+# 宣告一個 List
+my_list = [1, 2, 3, 4, 5]
+
+# 添加元素
+my_list.append(6)
+
+# 查詢元素
+second_element = my_list[1]  # 查詢索引為1的元素
+
+# 更新元素
+my_list[2] = 10  # 將索引為2的元素更新為10
+
+# 刪除元素
+del my_list[3]  # 刪除索引為3的元素
+
+# 3. 操作 Dict
+# 宣告一個 Dict
+my_dict = {'a': 1, 'b': 2, 'c': 3}
+
+# 添加元素
+my_dict['d'] = 4
+
+# 查詢元素
+value_b = my_dict['b']  # 查詢鍵為'b'的值
+
+# 更新元素
+my_dict['c'] = 10  # 將鍵為'c'的值更新為10
+
+# 刪除元素
+del my_dict['a']  # 刪除鍵為'a'的元素
+
+# 4. 用 for loop 操作 list
+for element in my_list:
+    print(element)
+
+# 5. 用 for loop 搭配 if else，對 list 內的元素作判斷
+for element in my_list:
+    if element % 2 == 0:
+        print(f"{element} is even")
+    else:
+        print(f"{element} is odd")
+
+# 6. 編寫不同類型的 Python 函數
+
+# 沒有帶參數的函數
+def greet():
+    print("Hello, world!")
+
+# 有帶參數的函數
+def greet_with_name(name):
+    print(f"Hello, {name}!")
+
+# 沒有帶參數，但有帶 return 的函數
+def get_number():
+    return 42
+
+# 有帶參數，有帶 return 的函數
+def add_numbers(a, b):
+    return a + b
+
+# 測試函數
+# greet()
+# greet_with_name("Alice")
+# num = get_number()
+# print(num)
+# sum_result = add_numbers(3, 4)
+# print(sum_result)
